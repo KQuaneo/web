@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网页</title>
+    <title>待办事项清单</title>
     <link rel="stylesheet" href="style.css"> <!-- 引入CSS -->
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的网页</h1>
-    </header>
-    <main>
-        <p>这是一个简单的网页示例。</p>
-    </main>
-    <footer>
-        <p>© 2024 我的网页</p>
-    </footer>
+    <div class="todo-app">
+        <h1>待办事项清单</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="请输入待办事项" required>
+            <input type="date" id="todo-date" required>
+            <input type="time" id="todo-time" required>
+            <button type="submit">添加</button>
+        </form>
+        <h2>待办事项</h2>
+        <ul id="todo-list"></ul>
+        <h2>已完成事项</h2>
+        <ul id="completed-list"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

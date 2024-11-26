@@ -1,9 +1,6 @@
 /* style.css */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -27,4 +24,71 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.todo-app {
+    width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.todo-app h1, .todo-app h2 {
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#todo-form input, #todo-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#todo-form input[type="text"] {
+    flex: 2;
+    margin-right: 10px;
+}
+
+#todo-form input[type="date"], #todo-form input[type="time"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#todo-form button {
+    flex: 0.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li button {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: #000;
 }
